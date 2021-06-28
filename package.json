@@ -1,0 +1,29 @@
+{
+  "name": "tailwindcss-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production TAILWIND_MODE=build postcss src/style.css -o public/style.css",
+    "build:dev": "TAILWIND_MODE=build postcss src/style.css -o public/style.css",
+    "watch": "TAILWIND_MODE=watch postcss src/style.css -o public/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoryEvans2324/tailwindcss-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoryEvans2324/tailwindcss-template/issues"
+  },
+  "homepage": "https://github.com/CoryEvans2324/tailwindcss-template#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
